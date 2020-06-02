@@ -53,6 +53,8 @@ min_month = dates[indx_min_month]
 
 #------------------------------------------------------------------------------------------
 
+print("Financial Analysis")
+print("----------------------------------------------------")
 print(f"Total Months: {total_months}")
 print(f"Total Amount: ${total_amount}")
 print(f"Average Change: ${ave_of_changes}")
@@ -60,3 +62,17 @@ print(f'Greatest Increase in Profits: {max_month} (${max_value})')
 print(f'Greatest Decrease In Profits: {min_month} (${min_value})')
 
 #------------------------------------------------------------------------------------------
+
+# Set the Text file path
+results = os.path.join("Analysis_PyBank", "Bank_Analysis_Results.txt")
+
+with open(results, 'w') as txtfile:
+
+    txtfile.write("Financial Analysis")
+    txtfile.write("\n-------------------------------------------------")
+    txtfile.write(f"\nTotal Months: {total_months}")
+    txtfile.write(f"\nTotal Amount: ${total_amount}")
+    txtfile.write(f"\nAverage Change: ${ave_of_changes}")
+    txtfile.write(f"\nGreatest Increase in Profits: {max_month} (${max_value})")
+    txtfile.write(f"\nGreatest Decrease In Profits: {min_month} (${min_value})")
+
