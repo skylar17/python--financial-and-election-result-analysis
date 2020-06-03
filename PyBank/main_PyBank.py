@@ -6,8 +6,6 @@ import statistics
 csvpath = os.path.join("Resources_PyBank", "budget_data.csv")
 
 
-#def pyBank(parameter):
-
 # Reading in the CSV file 
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
