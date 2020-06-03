@@ -18,7 +18,7 @@ with open(csvpath) as csvfile:
 
 
 # The total number of votes cast
-total_votes = len(votes)
+total_votes = len(all_votes)
 
 # A complete list of candidates who received votes (uniques from Candidate column)
 if row[2] not in unique_candidates:
