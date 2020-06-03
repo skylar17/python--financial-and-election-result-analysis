@@ -2,7 +2,7 @@ import os
 import csv
 
 # Set a CSV file path
-csvpath = os.path.join("PyPoll", "Resources_PyPoll", "election_data.csv")
+csvpath = os.path.join( "Resources_PyPoll", "election_data.csv")
 
 # Reading in the CSV file 
 with open(csvpath) as csvfile:
@@ -42,7 +42,7 @@ winner = unique_candidates[indx_winner]
             
 
 
-print("Election Results")
+print("\nElection Results")
 print("-----------------------------------")
 print(f"Total Votes: {total_votes}")
 print("-----------------------------------")
@@ -57,6 +57,21 @@ print("-----------------------------------")
 
 #------------------------------------------------------------------------------------------
 
+# Set the Text file path
+results = os.path.join("Analysis_PyPoll", "Poll_Results.txt")
 
+with open(results, 'w') as txtfile:
+
+    txtfile.write("Election Results")
+    txtfile.write("\n-----------------------------------")
+    txtfile.write(f"\nTotal Votes: {total_votes}")
+    txtfile.write("\n-----------------------------------")
+
+    for i in range(len(unique_candidates)):
+        txtfile.write(f"\n{unique_candidates[i]}: {percent[i]}% ({candidate_count[i]})")
+
+    txtfile.write("\n-----------------------------------")
+    txtfile.write(f"\nWinner: {winner}")
+    txtfile.write("\n-----------------------------------")
 
 
