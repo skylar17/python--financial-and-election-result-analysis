@@ -19,7 +19,9 @@
 
   * The greatest decrease in losses (date and amount) over the entire period
 
+
 -------------------
+
 
 ## PyPoll - Election Results Analysis
 
