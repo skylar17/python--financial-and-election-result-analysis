@@ -1,8 +1,9 @@
 # Python Challenge 
 
-## PyBank - Financial Analysis
 
-![Revenue](Images/revenue-per-lead.png)
+
+### PyBank - Financial Analysis
+
 
 ###### In this challenge, the provided dataset [budget_data.csv] is composed of two columns: `Date` and `Profit/Losses`. 
 
@@ -20,12 +21,9 @@
   * The greatest decrease in losses (date and amount) over the entire period
 
 
--------------------
 
+### PyPoll - Election Results Analysis
 
-## PyPoll - Election Results Analysis
-
-![Vote Counting](Images/Vote_counting.png)
 
 ###### In this challenge, the given set of data is called [election_data.csv]. The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`.
 
