@@ -7,6 +7,8 @@
 
 ###### In this challenge, the provided dataset [budget_data.csv] is composed of two columns: `Date` and `Profit/Losses`. 
 
+![Revenue](Images/revenue-per-lead.png)
+
 
 * Create a Python script that analyzes the financial records of a company to calculate each of the following:
 
@@ -22,10 +24,16 @@
 
 
 
+-----------------------------------
+
+
+
 ### PyPoll - Election Results Analysis
 
 
 ###### In this challenge, the given set of data is called [election_data.csv]. The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`.
+
+![Vote Counting](Images/Vote_counting.png)
 
 
 * Create a Python script that analyzes the votes and calculates each of the following:
